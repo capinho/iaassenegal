@@ -1,1 +1,1 @@
-web: gunicorn projsoumare.wsgi
+web: python manage.py migrate && gunicorn projsoumare.wsgi
