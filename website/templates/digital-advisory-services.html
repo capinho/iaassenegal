@@ -1,0 +1,176 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<!--header start-->
+
+<header id="site-header" class="header">
+  <div class="header-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-12 d-flex align-items-center justify-content-between">
+            <div class="social-icons">
+              <ul class="list-inline">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-middle">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 d-flex align-items-center justify-content-between">
+          <a class="navbar-brand logo" href="{% url 'home' %}">
+            <img id="logo-img" class="img-center" src="{% static 'website/images/logo-white.png' %}" alt="" width="250" height="350">
+          </a>
+          <div class="topbar-link d-none d-sm-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center mr-3"> <i class="flaticon-email"></i>
+                <div>
+                  <h6>Envoyez-nous un email</h6>
+                  <a href="mailto:contact@iaas-senegal.com">contact@iaas-senegal.com</a>
+                </div>
+              </div>
+              <div class="d-none d-md-flex align-items-center mr-3"> <i class="flaticon-phone"></i>
+                <div>
+                  <h6>Appelez-nous</h6>
+                  <a href="tel:+221338646719"> +221338646719</a>
+                </div>
+              </div>
+              <div class="d-none d-lg-flex align-items-center"> <i class="flaticon-24-hours"></i>
+                <div>
+                  <h6>Heures d'ouverture</h6>
+                  <p class="mb-0">Lundi-Samedi 8h-17h</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="header-wrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  {% include 'nav.html' %}
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+ <div class="search-input" id="search-input-box">
+            <div class="container ">
+                <form class="d-flex justify-content-between search-inner">
+                    <input type="text" class="form-control" id="search-input" placeholder="Search Here">
+                    <button type="submit" class="btn"></button>
+                    <span class="flaticon-close" id="close-search" title="Close Search"></span>
+                </form>
+            </div>
+        </div>
+
+<!--header end-->
+
+
+<!--page title start-->
+
+<section class="page-title parallaxie" data-bg-img="{% static 'website/images/bg/08.jpg' %}">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-12">
+        <h1>Digital Advisory Services</h1>
+        <nav aria-label="breadcrumb" class="page-breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Accueil</a>
+            </li>
+            <li class="breadcrumb-item"><a href="#">Services</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Digital Advisory Services</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--page title end-->
+
+
+<!--body content start-->
+
+<div class="page-content">
+
+<!--section start-->
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-12">
+        <h2 class="title mb-3">Digital Advisory Services</h2>
+        <p class="mb-0">Nos offres sur le Digital Advisory Services sont orientées pour représenter une grande force de compétitivité pour votre compagnie.</p>
+        <img class="img-fluid w-100 rounded box-shadow my-4" src="{% static 'website/images/bg/02.jpg' %} " alt="">
+        <p>Nous mettons tout notre savoir-faire à contribution au travers des offres que nous vous proposons et qui se déclinent autour des axes suivants :</p>
+        <p class="mb-0">Gouvernance et performance de la fonction SI : diagnostic et réalisation de schémas directeurs SI, expression des besoins et aide au choix d’outils, assistance à maitrise d’ouvrage, gestion du changement, pilotage de projets complexes, optimisation de l’efficacité de la fonction SI (pilotage de la performance, réorganisation de la DSI, réalisation de la cartographie du SI,…)
+              Gestion des risques liés aux SI : audit des risques liés aux SI, sécurisation des SI, mise en place d’un cadre de lutte contre la cybercriminalité
+              Data analysis et Big Data : déploiement de stratégie de gestion des données, cadrage de dispositifs de pilotage de données, mise en place de dispositifs de contrôle en continu, travaux d’analyse de données en appui aux auditeurs externes et internes, formation et accompagnement. 
+        </p>
+        
+      </div>
+      <div class="col-lg-4 col-md-12 sidebar md-mt-5">
+        <div class="widget mb-5">
+          <div class="sidebar-links">
+            <ul class="list-unstyled">
+              <li ><a href="{% url 'financial-advisory-services' %}"><span class="link-icon link-arrow"></span> <p class="link-text">Financial advisory services</p></a>
+              </li>
+              <li><a href="{% url 'audit-services' %}"><span class="link-icon link-arrow"></span> <p class="link-text">Audit services</p> </a>
+              </li>
+              <li><a href="{% url 'assistance-technique-et-comptable' %}"><span class="link-icon link-arrow"></span><p class="link-text">Assistance techniques et comptable</p> </a>
+              </li>
+              <li><a href="{% url 'tax-and-legal-advisory-services' %}"><span class="link-icon link-arrow"></span><p class="link-text">Tax and legal advisory services</p> </a>
+              </li>
+              <li class="active"><a href="{% url 'digital-advisory-services' %}"><span class="link-icon link-arrow"></span><p class="link-text">Digital advisory services</p> </a>
+              </li>
+              <li><a href="{% url 'human-capital-advisory-services' %}"><span class="link-icon link-arrow"></span><p class="link-text">Human capital advisory services</p> </a>
+              </li>              
+            </ul>
+          </div>
+        </div>
+        <div class="widget mb-5"> <a href="#" class="brochure"><i class="fas fa-file-pdf"></i> Télécharger<span>Download.pdf</span></a>
+        </div>
+        <div class="widget">
+          <div class="widget-contact px-5 py-5 xs-px-2 xs-py-2 text-white" data-bg-img="{% static 'website/images/bg/01.jpg' %}" data-overlay="8">
+            <h4 class="text-white text-capitalize" style="text-transform: none !important;">Contactez-nous pour obtenir de l'aide</h4>
+            <p>Contactez-nous ou soumettez une demande commerciale en ligne.</p> <a class="btn" href="{% url 'contact' %}"><span>Contact</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--section end-->
+
+</div>
+
+<!--body content end--> 
+
+{% endblock %}

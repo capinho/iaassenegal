@@ -1,0 +1,9 @@
+{% block subject %}Nouvelle demande pour Devis {% endblock %}
+
+{% block html %}
+  <p>Recu de {{name}}</p>
+  <p>Email: {{email}}</p>
+  <p>Telephone: {{phone}}</p>
+  <p>Service: {{service}}</p>
+
+{% endblock %}

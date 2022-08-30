@@ -1,0 +1,251 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<!--header start-->
+
+<header id="site-header" class="header">
+  <div class="header-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-12 d-flex align-items-center justify-content-between">
+            <div class="social-icons">
+              <ul class="list-inline">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-middle">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 d-flex align-items-center justify-content-between">
+          <a class="navbar-brand logo" href="{% url 'home' %}">
+            <img id="logo-img" class="img-center" src="{% static 'website/images/logo-white.png' %}" alt="" width="250" height="350">
+          </a>
+          <div class="topbar-link d-none d-sm-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center mr-3"> <i class="flaticon-email"></i>
+                <div>
+                  <h6>Envoyez-nous un email</h6>
+                  <a href="mailto:contact@iaas-senegal.com">contact@iaas-senegal.com</a>
+                </div>
+              </div>
+              <div class="d-none d-md-flex align-items-center mr-3"> <i class="flaticon-phone"></i>
+                <div>
+                  <h6>Appelez-nous</h6>
+                  <a href="tel:+221338646719"> +221338646719</a>
+                </div>
+              </div>
+              <div class="d-none d-lg-flex align-items-center"> <i class="flaticon-24-hours"></i>
+                <div>
+                  <h6>Heures d'ouverture</h6>
+                  <p class="mb-0">Lundi-Samedi 8h-17h</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="header-wrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto mr-auto">
+                    <!-- Home -->
+                    <li class="nav-item dropdown" data-toggle="hover"> <a class="nav-link" href="{% url 'home'%}" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+                    </li>
+                    <li class="nav-item dropdown" data-toggle="hover"> <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Le Cabinet</a>
+                      <div class="dropdown-menu">
+                        <ul class="list-unstyled">
+                          <li><a href="{% url 'about-our-company' %}">A propos de nous</a>
+                          </li>
+                          <li><a href="{% url 'mission-values' %}">Mission et valeurs</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown" data-toggle="hover"> <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                      <div class="dropdown-menu">
+                        <ul class="list-unstyled">
+                          <li><a href="{% url 'financial-advisory-services' %}">Financial advisory services</a>
+                          </li>
+                          <li><a href="{% url 'audit-services' %}">Audit services</a>
+                          </li>
+                          <li> <a href="{% url 'assistance-technique-et-comptable' %}">Assistance technique et comptable</a>
+                          </li>
+                          <li> <a href="{% url 'tax-and-legal-advisory-services' %}">Tax and legal advisory services</a>
+                          </li>
+                          <li> <a href="{% url 'digital-advisory-services' %}">Digital advisory services</a>
+                          </li>
+                          <li> <a href="{% url 'human-capital-advisory-services' %}">Human capital advisory services  </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown" data-toggle="hover"> <a class="nav-link active" href="{% url 'contact' %}" role="button" aria-haspopup="true" aria-expanded="false">Contact</a>
+                    </li>
+                  </ul>            
+          </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!--header end-->
+
+
+<!--page title start-->
+
+<section class="page-title parallaxie" data-bg-img="{% static 'website/images/bg/08.jpg' %}">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-12">
+        <h1>Contact</h1>
+        <nav aria-label="breadcrumb" class="page-breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Accueil</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Contact
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--page title end--> 
+
+
+<!--body content start-->
+
+<div class="page-content">
+
+<!--contact start-->
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="contact-main white-bg p-5 box-shadow">
+          <form id="" class="row" method="post" action="{% url 'contact' %}">
+            {% csrf_token %}
+
+            <div id="formmessage"></div>
+            <div class="form-group col-md-6">
+              <input id="form_name" type="text" name="firstname" class="form-control" placeholder="Prenom" required="required" data-error="Le Prenom est requis.">
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group col-md-6">
+              <input id="form_name1" type="text" name="lastname" class="form-control" placeholder="Nom" required="required" data-error="Le nom est requis.">
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group col-md-12">
+              <input id="form_email" type="email" name="email" class="form-control" placeholder="Email" required="required" data-error="un email valide est requis.">
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group col-md-12">
+              <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Telehone" required="required" data-error="Le telephone est requis">
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group col-md-6">
+              <select name="select" class="form-control">
+                <option>- Selectionnez un Service</option>
+                <option>Financial Advisory Services</option>
+                <option>Audit Services</option>
+                <option>Assistance Technique et Comptable</option>
+                <option>Tax and Legal Advisory Services</option>
+                <option>Digital Advisory Services</option>
+                <option>Human Capital Advisory Services</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <input id="form_subject" type="tel" name="subject" class="form-control" placeholder="Objet" required="required" data-error="L'objet est requis.">
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group col-md-12">
+              <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="4" required="required" data-error="S'il vous plaît, laissez-nous un message."></textarea>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="col-md-12 text-center mt-4">
+              <button class="btn"><span>Envoyez</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="section-title">
+          <h6>Contact</h6>
+          <h2 class="title">Décrivez votre projet et laissez-nous vos coordonnées</h2>
+          <p>Contactez-nous et dites-nous comment nous pouvons vous aider. Remplissez le formulaire et nous vous contacterons dans les plus brefs délais.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-info">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-12">
+        <div class="contact-media"> <i class="flaticon-paper-plane"></i>
+          <h4 class="text-theme">Addresse:</h4>
+          <div class="mb-3">
+            <h6 class="font-w-5">Bureau:</h6>
+            <span class="text-black"> IMMEUBLE EPI, BOULEVARD DU SUD, RUE DES ÉCRIVAINS , POINT E DAKAR SÉNÉGAL</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 md-mt-5">
+        <div class="contact-media"> <i class="flaticon-email"></i>
+          <h4 class="text-theme">Envoyez-nous un email</h4>
+          <p class="mb-3">Envoyez-nous un e-mail pour des questions générales, y compris des opportunités de marketing et de partenariat.</p>
+          <a href="mailto:contact@iaas-senegal.com"> contact@iaas-senegal.com</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 md-mt-5">
+        <div class="contact-media"> <i class="flaticon-phone"></i>
+          <h4 class="text-theme">Appelez-nous</h4>
+          <p class="mb-3">Appelez-nous pour parler à un membre de notre équipe.</p> 
+          <a href="tel:+221338691919">TEL: +221 33 869 19 19</a>
+          <a href="#">FAX : +221 33 864 67 19</a>
+        </div>        
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="map iframe-h-2">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.199958639405!2d-17.460910385158613!3d14.70128128973845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec173bf2b828ec5%3A0x9991b16580906863!2sBUREAU%20DU%20BIT%2C%20IMMEUBLE%20EPI%2C%20BOULEVARD%20DU%20SUD%2C%20RUE%20DES%20%C3%89CRIVAINS%20%2C%20POINT%20E%20DAKAR%20S%C3%89N%C3%89GAL!5e0!3m2!1sen!2ssn!4v1616163394008!5m2!1sen!2ssn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+<!--contact end-->
+
+</div>
+
+<!--body content end--> 
+
+{% endblock %}

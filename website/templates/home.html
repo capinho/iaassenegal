@@ -1,0 +1,495 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<!--header start-->
+
+<header id="site-header" class="header header-2">
+  <div class="header-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-12 d-flex align-items-center justify-content-between">
+            <div class="social-icons">
+              <ul class="list-inline">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          <div class="topbar-link d-flex align-items-center">
+              <div class="d-none d-sm-flex align-items-center mr-3"> <i class="flaticon-email"></i>
+                <div>
+                  <a href="mailto:contact@iaas-senegal.com">contact@iaas-senegal.com</a>
+                </div>
+              </div>
+              <div class="d-none d-md-flex align-items-center mr-3"> <i class="flaticon-phone"></i>
+                <div>
+                  <a href="tel:+221338646719"> +221338646719</a>
+                </div>
+              </div>
+              <div class="d-none d-lg-flex align-items-center"> <i class="flaticon-24-hours"></i>
+                <div>
+                  <p class="mb-0">Lundi-Samedi 8h-17h</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="header-wrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg align-items-center">
+            <a class="navbar-brand logo" href="{% url 'home' %}">
+            <img class="img-center" src="{% static 'website/images/logo-white.png' %}" alt="" width="250" height="350">
+          </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              {% include "nav.html" %}
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+<!--header end-->
+
+
+<!--hero section start-->
+
+<section class="banner p-0 pos-r fullscreen-banner">
+  <div class="banner-slider owl-carousel no-pb" data-dots="false" data-nav="true">
+    <div class="item" data-bg-img="{% static 'website/images/bg/08.jpg' %}" data-overlay="5">
+      <div class="align-center">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-7 col-md-12">
+              <h4 class="mb-4 text-white animated1" style="text-transform: none !important;">Cabinet de conseils spécialisé dans le secteur des assurances</h4>
+              <div class="animated3 mt-5">
+                <a class="btn btn-2" href="{% url 'contact' %}"> <span class="btn-icon btn-arrow"></span>
+                  <span class="btn-text">Nous contacter</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item" data-bg-img="{% static 'website/images/bg/001.jpg' %}" data-overlay="5">
+      <div class="align-center">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-7 col-md-12">
+              <h4  class="mb-4 text-white animated1" style="text-transform: none !important;">IAAS, notre expertise à votre service</h4>
+              <div class="animated3 mt-5">
+                <a class="btn btn-2" href="{% url 'contact' %}"> <span class="btn-icon btn-arrow"></span>
+                  <span class="btn-text">Nous contacter</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item" data-bg-img="{% static 'website/images/bg/002.jpeg' %}" data-overlay="5">
+      <div class="align-center">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-7 col-md-12">
+              <h4 class="mb-4 text-white animated1" style="text-transform: none !important;">IAAS, notre expertise à votre service</h4>
+              <div class="animated3 mt-5">
+                <a class="btn btn-2" href="{% url 'contact' %}"> <span class="btn-icon btn-arrow"></span>
+                  <span class="btn-text">Nous contacter</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>        
+  </div>
+</section>
+
+<!--hero section end-->
+
+
+<!--body content start-->
+
+<div class="page-content">
+
+
+<!--counter start-->
+
+<!--counter end-->
+
+
+<!--case studies start-->
+
+<section>
+  <div class="container-fluid pr-sm-0">
+    <div class="row">
+      <div class="ml-auto mr-auto col-lg-3 col-md-12">
+        <div class="section-title md-mb-3">
+          <h2 class="title">Notre mission</h2>
+          <p>L’objectif de notre cabinet est de vous proposer des réponses pratiques à la résolution des contraintes pour le développement de votre business.</p>
+        </div>
+        <a class="btn btn-2" href="{% url 'financial-advisory-services' %}">
+          <span class="btn-icon btn-arrow"></span>
+          <span class="btn-text">Voir Plus</span>
+        </a>
+      </div>
+      <div class="col-lg-8 col-md-12 ml-sm-n5 side-top-bg md-mt-5">
+        <div class="owl-carousel mt-8 ml-sm-5" data-items="3" data-md-items="2" data-sm-items="2" data-margin="30" data-autoplay="true">
+          <div class="item">
+            <div class="cases-item style-2 text-center">
+              <div class="cases-images">
+                <img class="img-fluid rounded box-shadow" src="{% static 'website/images/case-studies/01.jpg' %}" alt="">
+              </div>
+              <div class="cases-desc"> 
+                <h5 style="text-transform: none !important;"><a href="#">Accompagnement en finance</a></h5>
+                <p>Due diligence, evaluation, cession, fusion-Acquisition, recapitalisation</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="cases-item style-2 text-center">
+              <div class="cases-images">
+                <img class="img-fluid rounded box-shadow" src="{% static 'website/images/case-studies/02.jpg' %}" alt="">
+              </div>
+              <div class="cases-desc"> 
+                <h5 style="text-transform: none !important;"><a href="#">Accompagnement en comptabilite et en gestion </a></h5>
+                <p>Analyse des Comptes, rapprochement comptable</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="cases-item style-2 text-center">
+              <div class="cases-images">
+                <img class="img-fluid rounded box-shadow" src="{% static 'website/images/case-studies/03.jpg' %}" alt="">
+              </div>
+              <div class="cases-desc"> 
+                <h5 style="text-transform: none !important;"><a href="#">Accompagnement en formation</a></h5>
+                <p>Renforcement des capacitEs, coaching, recrutement</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="cases-item style-2 text-center">
+              <div class="cases-images">
+                <img class="img-fluid rounded box-shadow" src="{% static 'website/images/case-studies/04.jpg' %}" alt="">
+              </div>
+              <div class="cases-desc"> 
+                <h5 style="text-transform: none !important;"><a href="#">Accompagnement en digital</a></h5>
+                <p>Automatisation de processus de gestion, de processus de pilotage, de processus de controle</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="cases-item style-2 text-center">
+              <div class="cases-images">
+                <img class="img-fluid rounded box-shadow" src="{% static 'website/images/case-studies/05.jpg' %}" alt="">
+              </div>
+              <div class="cases-desc"> 
+                <h5 style="text-transform: none !important;"><a href="#">Accompagnement fiscale </a></h5>
+                <p>Conformité fiscale, Situation Fiscale, optimisation Fiscale, analyse fiscale</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="cases-item style-2 text-center">
+              <div class="cases-images">
+                <img class="img-fluid rounded box-shadow" src="{% static 'website/images/case-studies/06.jpg' %}" alt="">
+              </div>
+              <div class="cases-desc"> 
+                <h5 style="text-transform: none !important;"><a href="#">Accompagnement en audit</a></h5>
+                <p>Audit interne, Controle interne, Gestion des risques, cartographie des risques</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--case studies end-->
+
+
+<!--service start-->
+
+<section class="dark-bg custom-pb-1">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-8 col-md-12">
+        <div class="section-title">
+          <h6>Services</h6>
+          <h2 class="title">Pourquoi IAAS?</h2>
+          <p class="text-rgba">Les services offerts par IAAS sont conçus pour une prise en charge rapide et une résolution des problématiques que traversent assez souvent les intervenants dans le secteur des assurances dans le cadre de leurs activités quotidiennes.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+        <div class="featured-item style-4">
+          <div class="featured-icon"> <i class="flaticon-solution"></i>
+          </div>
+          <div class="featured-title">
+            <h5>Digital Advisory Services</h5>
+          </div>
+          <div class="featured-desc">
+            <p>Nos offres sur le Digital Advisory Services sont orientées pour représenter une grande force de compétitivité pour votre compagnie.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="featured-item style-4">
+          <div class="featured-icon"> <i class="flaticon-money-1"></i>
+          </div>
+          <div class="featured-title">
+            <h5>Financial Advisory Services</h5>
+          </div>
+          <div class="featured-desc">
+            <p>Cette activité a pour objet d’apporter des solutions aux entreprises et organisations dans leurs opérations de croissance, de transmission et d’amélioration des performances</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="featured-item style-4">
+          <div class="featured-icon"> <i class="flaticon-life"></i>
+          </div>
+          <div class="featured-title">
+            <h5>Human Capital Advisory Services</h5>
+          </div>
+          <div class="featured-desc">
+            <p>Nous disposons d'une large expérience en matière de formation et d'accompagnement des compagnies d'assurance, que ce soit des modules ponctuels ou suivant un plan de formation sur une période prédéfinie.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="featured-item style-4">
+          <div class="featured-icon"> <i class="flaticon-testing"></i>
+          </div>
+          <div class="featured-title">
+            <h5>Tax And Legal Advisory Services</h5>
+          </div>
+          <div class="featured-desc">
+            <p>Notre offre de service Tax and Legal Advisory Services vous accompagne dans la résolution des problématiques juridiques, fisacles et administratives, face à une réglementation juridique et fiscale changeante au niveau des compagnies d'assurance.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="featured-item style-4">
+          <div class="featured-icon"> <i class="flaticon-search"></i>
+          </div>
+          <div class="featured-title">
+            <h5>Audit Services </h5>
+          </div>
+          <div class="featured-desc">
+            <p>Nos lignes de services ont pour but de répondre avec efficacité aux problématiques et besoins complexes de nos clients (Audit de cession, Audit du contrôle interne ,Audit des projets de développement, des fondations et des associations , Audit opérationnel ou diagnostic d’organisation et de gestion</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="featured-item style-4">
+          <div class="featured-icon"> <i class="flaticon-analysis-1"></i>
+          </div>
+          <div class="featured-title">
+            <h5>Assistance Technique et Comptable </h5>
+          </div>
+          <div class="featured-desc">
+            <p>Nous offrons une assistance comptable pour l'analyse des comptes de gestion et Technique pour les compagnies d'assurance</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--service end-->
+
+
+<!--testimonial start-->
+
+<section class="p-0 custom-mt-10">
+  <div data-items="1" data-dots="false" >
+    <div class="item">
+      <div class="container-fluid p-0">
+        <div class="row align-items-center no-gutters">
+          <div class="col-lg-6 col-md-5 ml-md-5 mr-n5 z-index-1">
+            <img class="img-fluid w-100 rounded box-shadow" src="{% static 'website/images/testimonial/02.jpg' %}" alt="">
+          </div>
+          <div class="col-lg-6 col-md-7">
+            <div class="testimonial style-1 theme-bg py-10 md-py-5 rounded pl-10 sm-pl-3 m-0 o-hidden">
+              <div class="testimonial-content">
+                <div class="testimonial-quote"><i class="fas fa-quote-left"></i>
+                </div>
+                <p class="text-white">
+                  L'industrie des assurances est un pilier essentiel dans l'émergence économique des pays en général et plus particulièrement nos pays de l'Afrique.
+                  Le secteur des assurances accompagne les investisseurs dans la protection de leurs actifs et participe à bonifier les épargnes de la population.
+                  La marge de progression du secteur sur notre continent est remarquablement importante, compte tenu du faible taux de pénétration actuel.
+                  Notre cabinet se propose d'accompagner les acteurs du marché des assurances dans le cadre du développement de leurs activités en Afrique.
+                  Notre forte spécialisation sur les assurances nous permet de vous fournir des conseils personnalisés en accord avec vos attentes, sur un continent en pleine mutation avec de forts enjeux de développement.
+                </p>
+                <div class="testimonial-caption">
+                  <h5 class="text-white">Madiou Soumare</h5>
+                  <label>Expert Comptable - Risk Manager</label>
+                  <label>Founder & Partner - IAAS</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--testimonial end-->
+
+
+<!--team start-->
+
+{% comment %} <section>
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-8 col-md-12">
+        <div class="section-title">
+          <h6>Team Expert</h6>
+          <h2 class="title">Meet Our Advisory Team</h2>
+          <p>Consulterz discovering the source behind the ubiquitous filler text. In seeing a sample of lorem ipsum, his interest was piqued by consectetur</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="owl-carousel" data-items="3" data-md-items="2" data-margin="30" data-sm-items="1" data-autoplay="true">
+          <div class="item">
+            <div class="team-member style-1">
+              <div class="team-images">
+                <img class="img-fluid" src="{% static 'website/images/team/01.jpg' %}" alt="">
+                <div class="team-social-icon">
+                  <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="team-description">
+                <h5><a href="team-single.html">Alexandra</a></h5>
+                <span>Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="team-member style-1">
+              <div class="team-images">
+                <img class="img-fluid" src="{% static 'website/images/team/02.jpg' %}" alt="">
+                <div class="team-social-icon">
+                  <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="team-description">
+                <h5><a href="team-single.html">Rilon Jony</a></h5>
+                <span>Advisor</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="team-member style-1">
+              <div class="team-images">
+                <img class="img-fluid" src="{% static 'website/images/team/03.jpg' %}" alt="">
+                <div class="team-social-icon">
+                  <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="team-description">
+                <h5><a href="team-single.html">Daisy Loy</a></h5>
+                <span>Financial</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="team-member style-1">
+              <div class="team-images">
+                <img class="img-fluid" src="{% static 'website/images/team/04.jpg' %}" alt="">
+                <div class="team-social-icon">
+                  <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="team-description">
+                <h5><a href="team-single.html">Sam kevieon</a></h5>
+                <span>Accountant</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> {% endcomment %}
+
+<!--team end-->
+
+
+
+
+
+
+
+</div>
+
+<!--body content end--> 
+
+{% endblock %}

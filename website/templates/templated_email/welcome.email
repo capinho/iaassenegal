@@ -1,0 +1,11 @@
+{% block subject %}Nouveau email recu de {{firstname}} {{lastname}}{% endblock %}
+
+{% block html %}
+  <p><b><u>Objet:</u></b> {{subject}}</p>
+  <p><b><u>Service:</u></b> {{service}}</p>
+  <p><b><u>Telephone:</u></b>{{phone}}</p>
+  <p><b><u>Email:</u></b>{{email}}</p>
+  <p>Le message est : {{message}}</p>
+
+  <p>Cordialement</p>
+{% endblock %}

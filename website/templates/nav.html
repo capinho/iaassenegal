@@ -1,0 +1,35 @@
+<ul class="navbar-nav ml-auto mr-auto">
+    <!-- Home -->
+    <li class="nav-item dropdown" data-toggle="hover"> <a class="nav-link active " href="{% url 'home'%}" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+    </li>
+    <li class="nav-item dropdown" data-toggle="hover"> <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Le Cabinet</a>
+      <div class="dropdown-menu">
+        <ul class="list-unstyled">
+          <li><a href="{% url 'about-our-company' %}">A propos de nous</a>
+          </li>
+          <li><a href="{% url 'mission-values' %}">Mission et valeurs</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item dropdown" data-toggle="hover"> <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+      <div class="dropdown-menu">
+        <ul class="list-unstyled">
+          <li><a href="{% url 'financial-advisory-services' %}">Financial advisory services</a>
+          </li>
+          <li><a href="{% url 'audit-services' %}">Audit services</a>
+          </li>
+          <li> <a href="{% url 'assistance-technique-et-comptable' %}">Assistance technique et comptable</a>
+          </li>
+          <li> <a href="{% url 'tax-and-legal-advisory-services' %}">Tax and legal advisory services</a>
+          </li>
+          <li> <a href="{% url 'digital-advisory-services' %}">Digital advisory services</a>
+          </li>
+          <li> <a href="{% url 'human-capital-advisory-services' %}">Human capital advisory services  </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item dropdown" data-toggle="hover"> <a class="nav-link " href="{% url 'contact' %}" role="button" aria-haspopup="true" aria-expanded="false">Contact</a>
+    </li>
+  </ul>

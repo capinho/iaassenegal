@@ -1,0 +1,186 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<!--header start-->
+
+<header id="site-header" class="header">
+  <div class="header-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-12 d-flex align-items-center justify-content-between">
+            <div class="social-icons">
+              <ul class="list-inline">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-middle">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 d-flex align-items-center justify-content-between">
+          <a class="navbar-brand logo" href="{% url 'home' %}">
+            <img id="logo-img" class="img-center" src="{% static 'website/images/logo-white.png' %}" alt="" width="250" height="350">
+          </a>
+          <div class="topbar-link d-none d-sm-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center mr-3"> <i class="flaticon-email"></i>
+                <div>
+                  <h6>Envoyez-nous un email</h6>
+                  <a href="mailto:contact@iaas-senegal.com">contact@iaas-senegal.com</a>
+                </div>
+              </div>
+              <div class="d-none d-md-flex align-items-center mr-3"> <i class="flaticon-phone"></i>
+                <div>
+                  <h6>Appelez-nous</h6>
+                  <a href="tel:+221338646719"> +221338646719</a>
+                </div>
+              </div>
+              <div class="d-none d-lg-flex align-items-center"> <i class="flaticon-24-hours"></i>
+                <div>
+                  <h6>Heures d'ouverture</h6>
+                  <p class="mb-0">Lundi-Samedi 8h-17h</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="header-wrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              {% include "nav.html" %}
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!--header end-->
+
+<!--page title start-->
+
+<section class="page-title parallaxie" data-bg-img="{% static 'website/images/bg/08.jpg' %}">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-12">
+        <h1>Financial Advisory Services</h1>
+        <nav aria-label="breadcrumb" class="page-breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Accueil</a>
+            </li>
+            <li class="breadcrumb-item"><a href="#">Services</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Financial Advisory Services</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--page title end-->
+
+
+<!--body content start-->
+
+<div class="page-content">
+
+<!--section start-->
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-12">
+        <h2 class="title mb-3">Financial Advisory Services</h2>
+        <p class="mb-0">Cette activité a pour objet d’apporter des solutions aux entreprises et organisations dans leurs opérations de croissance, de transmission et d’amélioration des performances.</p>
+        <img class="img-fluid w-100 rounded box-shadow my-4" src="{% static 'website/images/services/large/01.jpg' %}" alt="">
+        <p>Nos prestations couvrent:</p>
+
+        <div class="row align-items-center mt-5">
+          <div class="col-sm-6 md-mt-5">
+            <ul class="list-unstyled list-icon">
+              <li class="mb-3"><i class="flaticon-tick"></i> Due Diligence M&A</li>
+              <li class="mb-3"><i class="flaticon-tick"></i> Accompagnement expertise et Évaluation des sinistres de globales de banques</li>
+              <li><i class="flaticon-tick"></i> Accompagnement de l'Évaluation d’un Sinistre et de la Perte d'Exploitation</li>
+              <li class="mb-3"><i class="flaticon-tick"></i> Investigations et prévention Fraude (mise en place de mesures de sauvegarde, recherche de fraude, analyse des dossiers litigieux</li>
+              <li class="mb-3"><i class="flaticon-tick"></i> Evaluation d’entreprise</li>
+              <li class="mb-3"><i class="flaticon-tick"></i> Stratégie et Organisation</li>
+              <li class="mb-3"><i class="flaticon-tick"></i> Restructuration d’entreprises</li>
+              <li class="mb-3"><i class="flaticon-tick"></i> Simulation Financière, prévisions </li>
+              <li class="mb-3"><i class="flaticon-tick"></i> Mise en place de tableaux de bord</li>
+              <li class="mb-3"><i class="flaticon-tick"></i> Modélisation de la trésorerie</li>
+              <li class="mb-3"><i class="flaticon-tick"></i> Plan d’amélioration rapide de la trésorerie</li>
+              <li class="mb-3"><i class="flaticon-tick"></i> Optimisation des montages financiers et analyses de sensibilité</li>
+              <li class="mb-3"><i class="flaticon-tick"></i> Accélération des encaissements de créances</li>
+              <li class="mb-3"><i class="flaticon-tick"></i> Etudes & veille économique</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab mt-5 grey-bg p-4">
+          <!-- Tab panes -->
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 sidebar md-mt-5">
+        <div class="widget mb-5">
+          <div class="sidebar-links">
+            <ul class="list-unstyled">
+              <li class="active"><a href="{% url 'financial-advisory-services' %}"><span class="link-icon link-arrow"></span> <p class="link-text">Financial Advisory Services</p></a>
+              </li>
+              <li><a href="{% url 'audit-services' %}"><span class="link-icon link-arrow"></span> <p class="link-text">Audit Services</p> </a>
+              </li>
+              <li><a href="{% url 'assistance-technique-et-comptable' %}"><span class="link-icon link-arrow"></span><p class="link-text">Assistance Techniques et Comptable</p> </a>
+              </li>
+              <li><a href="{% url 'tax-and-legal-advisory-services' %}"><span class="link-icon link-arrow"></span><p class="link-text">Tax and legal Advisory Services</p> </a>
+              </li>
+              <li><a href="{% url 'digital-advisory-services' %}"><span class="link-icon link-arrow"></span><p class="link-text">Digital Advisory Services</p> </a>
+              </li>
+              <li><a href="{% url 'human-capital-advisory-services' %}"><span class="link-icon link-arrow"></span><p class="link-text">Human Capital Advisory Services</p> </a>
+              </li>              
+            </ul>
+          </div>
+        </div>
+        <div class="widget mb-5"> <a href="#" class="brochure"><i class="fas fa-file-pdf"></i> Télécharger<span>Download.pdf</span></a>
+        </div>
+        <div class="widget">
+          <div class="widget-contact px-5 py-5 xs-px-2 xs-py-2 text-white" data-bg-img="{% static 'website/images/bg/01.jpg' %}" data-overlay="8">
+            <h4 class="text-white text-capitalize" style="text-transform: none !important;">Contactez-nous pour obtenir de l'aide</h4>
+            <p>Contactez-nous ou soumettez une demande commerciale en ligne.</p> <a class="btn" href="{% url 'contact' %}"><span>Contact</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--section end-->
+
+</div>
+
+<!--body content end--> 
+
+{% endblock %}
+

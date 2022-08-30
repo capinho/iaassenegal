@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<!-- meta tags -->
+<meta charset="utf-8">
+<meta name="keywords" content="IAAS, Insurance Advanced Advisory Services, Cabinet, accompagnement, assurance , Courtage, Senegal,cabinet assurance Courtage senegal , Financial Advisory Services, Audit Services, Assistance Technique Et Comptable, Tax And Legal Advisory Services,Digital Advisory Services, Human Capital Advisory Services, iaas senegal" />
+<meta name="description" content="IAAS, Insurance Advanced Advisory Services, Cabinet, assurance, Courtage, accompagnement, cabinet assurance Courtage senegal, Financial Advisory Services, Audit Services, Assistance Technique Et Comptable , Tax And Legal Advisory Services ,Digital Advisory Services, Human Capital Advisory Services, iaas senegal" />
+<meta name="author" content="pape ibrahima diawara" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Title -->
+<title>IAAS - Insurance Advanced Advisory Services</title>
+
+<!-- favicon icon -->
+<link rel="shortcut icon" href="{% static 'website/images/favicon.ico' %}" />
+
+<!-- inject css start -->
+
+<!--== theme plugin -->
+<link href="{% static 'website/css/theme-plugin.css' %}" rel="stylesheet" type="text/css" />
+
+<!--== style -->
+<link href="{% static 'website/css/style.css' %}" rel="stylesheet" type="text/css" />
+
+<!--== responsive -->
+<link href="{% static 'website/css/responsive.css' %}" rel="stylesheet" type="text/css" />
+
+<!--== color-customizer -->
+<link href="#" data-style="styles" rel="stylesheet">
+<link href="{% static 'website/css/color-customize/color-customizer.css' %}" rel="stylesheet" type="text/css" />
+
+<!-- inject css end -->
+
+</head>
+
+<body>
+
+<!-- page wrapper start -->
+
+<div class="page-wrapper">
+
+<!-- preloader start -->
+
+<div id="ht-preloader">
+  <div class="clear-loader">
+      <div class="loader"></div>
+  </div>
+</div>
+
+<!-- preloader end -->
+
+{% block content %}
+{% endblock %}
+
+
+<!--footer start-->
+
+<footer class="footer">
+    <div class="primary-footer dark-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 sm-mt-5">
+            <h4 class="mb-4 text-white" style="text-transform: none !important;">Nos metiers</h4>
+            <div class="footer-list">
+              <ul class="list-unstyled">
+                <li style="text-transform: none !important;"><a href="{% url 'financial-advisory-services' %}">Financial advisory services </a>
+                </li>
+                <li style="text-transform: none !important;"><a href="{% url 'audit-services' %}">Audit services</a>
+                </li>
+                <li style="text-transform: none !important;"> <a href="{% url 'assistance-technique-et-comptable' %}">Assistance technique et comptable</a>
+                </li>
+                <li style="text-transform: none !important;"> <a href="{% url 'tax-and-legal-advisory-services' %}">Tax and legal advisory services</a>
+                </li>
+                <li style="text-transform: none !important;"> <a href="{% url 'digital-advisory-services' %}">Digital advisory services</a>
+                </li>
+                <li style="text-transform: none !important;"> <a href="{% url 'human-capital-advisory-services' %}">Human capital advisory services</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 sm-mt-5">
+            <div class="social-icons social-colored mt-5">
+              <ul class="list-inline">
+                <li class="social-facebook"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="social-dribbble"><a href="#"><i class="fab fa-dribbble"></i></a>
+                </li>
+                <li class="social-skype"><a href="#"><i class="fab fa-skype"></i></a>
+                </li>
+                <li class="social-linkedin"><a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li class="social-youtube"><a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-5 ml-auto col-md-12 md-mt-5">
+            <h4 class="mb-4 text-white" style="text-transform: none !important;">A propos de IAAS</h4> 
+            <p class="mb-3">IAAS -Société anonyme à responsabilité limitée au capital de 2.000.000 FCFA – RCCM : 123A12 - NIF : 15525.</p>
+            <div class="footer-cntct">
+              <ul class="media-icon list-unstyled">
+                <li>
+                  <p class="mb-0"><i class="flaticon-paper-plane"></i>Immeuble EPI, Boulevard du sud, rue des écrivains , POINT E Dakar Sénégal </p>
+                </li>
+                <li><i class="flaticon-email"></i>  <a href="mailto:contact@iaas-senegal.com">contact@iaas-senegal.com</a>
+                </li>
+                <li><i class="flaticon-phone"></i>Tel: <a href="tel:+221338691919">+221 33 869 19 19</a>
+                </li>
+                <li><i class="flaticon-fax"></i>FAX: <a href="tel:+221338646719">+221 33 864 67 19</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="secondary-footer theme-bg">
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-lg-6"> <span>Copyright <script>document.write(new Date().getFullYear());</script> IAAS  by <u><a href="#">Pape Ibrahima diawara</a></u> | All Rights Reserved</span>
+            </div>
+            <div class="col-lg-6 text-lg-right footer-list md-mt-2">
+              <ul class="list-inline">
+                <li class="list-inline-item mb-0"><a href="{% url 'about-our-company' %}">A propos de nous</a>
+                </li>
+                <li class="list-inline-item mb-0"><a href="#">Team</a>
+                </li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!--footer end-->
+  
+  
+  </div>
+  
+  <!-- page wrapper end -->
+    
+  
+  <!--back-to-top start-->
+  
+  <div class="scroll-top"><a class="smoothscroll" href="#top"><i class="flaticon-top"></i></a></div>
+  
+  <!--back-to-top end-->
+  
+   
+  <!-- inject js start -->
+  
+  <!--== jquery -->
+  <script src="{% static 'website/js/theme.js' %}"></script>
+  
+  <!--== theme-plugin -->
+  <script src="{% static 'website/js/theme-plugin.js' %}"></script>
+  
+  <!--== color-customize -->
+  <script src="{% static 'website/js/color-customize/color-customizer.js' %}"></script> 
+  
+  <!--== theme-script -->
+  <script src="{% static 'website/js/theme-script.js' %}"></script>
+  
+  <!-- inject js end -->
+  
+  </body>
+  
+  </html>

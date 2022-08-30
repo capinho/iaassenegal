@@ -1,0 +1,352 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+
+
+<!--header start-->
+
+<header id="site-header" class="header">
+  <div class="header-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-12 d-flex align-items-center justify-content-between">
+            <div class="social-icons">
+              <ul class="list-inline">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-middle">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 d-flex align-items-center justify-content-between">
+          <a class="navbar-brand logo" href="{% url 'home' %}">
+            <img id="logo-img" class="img-center" src="{% static 'website/images/logo-white.png' %}" alt="" width="250" height="500">
+          </a>
+          <div class="topbar-link d-none d-sm-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center mr-3"> <i class="flaticon-email"></i>
+                <div>
+                  <h6>Envoyez-nous un email</h6>
+                  <a href="mailto:contact@iaas-senegal.com">contact@iaas-senegal.com</a>
+                </div>
+              </div>
+              <div class="d-none d-md-flex align-items-center mr-3"> <i class="flaticon-phone"></i>
+                <div>
+                  <h6>Appelez-nous</h6>
+                  <a href="tel:+221338691919"> +221338691919</a>
+                </div>
+              </div>
+              <div class="d-none d-lg-flex align-items-center"> <i class="flaticon-24-hours"></i>
+                <div>
+                  <h6>Heures d'ouverture</h6>
+                  <p class="mb-0">Lundi-Samedi 8h-17h</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="header-wrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto mr-auto">
+                <!-- Home -->
+                <li class="nav-item dropdown" data-toggle="hover"> <a class="nav-link " href="{% url 'home'%}" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+                </li>
+                <li class="nav-item dropdown" data-toggle="hover"> <a class="nav-link dropdown-toggle active" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Le Cabinet</a>
+                  <div class="dropdown-menu">
+                    <ul class="list-unstyled">
+                      <li><a href="{% url 'about-our-company' %} ">A propos de nous</a>
+                      </li>
+                      <li><a href="{% url 'mission-values' %}">Mission et valeurs</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item dropdown" data-toggle="hover"> <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                  <div class="dropdown-menu">
+                    <ul class="list-unstyled">
+                      <li><a href="{% url 'financial-advisory-services' %}">Financial advisory services</a>
+                      </li>
+                      <li><a href="{% url 'audit-services' %}">Audit services</a>
+                      </li>
+                      <li> <a href="{% url 'assistance-technique-et-comptable' %}">Assistance technique et comptable</a>
+                      </li>
+                      <li> <a href="{% url 'tax-and-legal-advisory-services' %}">Tax and legal advisory services</a>
+                      </li>
+                      <li> <a href="{% url 'digital-advisory-services' %}">Digital advisory services</a>
+                      </li>
+                      <li> <a href="{% url 'human-capital-advisory-services' %}">Human capital advisory services  </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item dropdown" data-toggle="hover"> <a class="nav-link " href="{% url 'contact' %}" role="button" aria-haspopup="true" aria-expanded="false">Contact</a>
+                </li>
+              </ul>            
+              </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+<!--header end-->
+
+
+<!--page title start-->
+
+<section class="page-title parallaxie" data-bg-img="{% static 'website/images/bg/08.jpg' %}">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-12">
+        <h1>INSURANCE ADVANCED ADVISORY SERVICES IAAS</h1>
+        <nav aria-label="breadcrumb" class="page-breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Accueil</a>
+            </li>
+            <li class="breadcrumb-item"><a href="#">A propos de nous</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">IAAS</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--page title end-->
+
+
+<!--body content start-->
+
+<div class="page-content">
+
+
+<!--about us start-->
+
+<section>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-12">
+        <div class="pos-r">
+          <img class="img-fluid rounded box-shadow w-100" src="{% static 'website/images/about/03.jpg' %}" alt="" width="900" height="900">
+          {% comment %} <div class="video-btn video-btn-pos"> <a class="play-btn popup-youtube mr-3" href="#"><i class="fas fa-play"></i></a> 
+          </div>{% endcomment %}
+        </div>
+      </div>
+      <div class="col-lg-6 col-12 md-mt-5">
+        <div class="section-title">
+          <h6>Insurance Advanced Advisory Services</h6>
+          <h2 class="title">Notre expertise a votre service</h2>
+          <p>IAAS est un cabinet de conseils spécialisé dans le secteur des assurances. Le Cabinet IAAS propose un accompagnement spécifique aux compagnies d’assurance, de réassurance et de Courtage.</p>
+          <p>Les services offerts par IAAS sont conçus pour une prise en charge rapide et une résolution des problématiques que traversent assez souvent les intervenants dans le secteur des assurances dans le cadre de leurs activités quotidiennes.</p>
+        </div>
+        <div class="ht-progress-bar">
+          <h4>SATISFACTION</h4>
+          <div class="progress" data-value="100">
+            <div class="progress-bar">
+              <div class="progress-parcent"><span>100</span>%</div>
+            </div>
+          </div>
+        </div>
+        <div class="ht-progress-bar">
+          <h4>FLEXIBILITE</h4>
+          <div class="progress" data-value="95">
+            <div class="progress-bar">
+              <div class="progress-parcent"><span>95</span>%</div>
+            </div>
+          </div>
+        </div>
+        <div class="ht-progress-bar">
+          <h4>DISPONIBILITE</h4>
+          <div class="progress" data-value="95">
+            <div class="progress-bar">
+              <div class="progress-parcent"><span>95</span>%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ht-progress-bar mb-0">
+          <h4>REACTIVITE</h4>
+          <div class="progress" data-value="90">
+            <div class="progress-bar">
+              <div class="progress-parcent"><span>90</span>%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--about us end-->
+
+
+<!--about start-->
+
+<section>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-12 order-lg-1">
+        <div class="row no-gutters">
+          <div class="col-sm-7 z-index-1">
+            <div class="theme-bg rounded p-4">
+              <div class="section-title mb-0">
+                <h2 class="title mb-0 font-w-5">IAAS, notre expertise a votre service</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 ml-n1 mt-sm-5">
+            <img class="img-fluid rounded" src="{% static 'website/images/about/05.jpg' %}" alt="">
+          </div>
+        </div>
+        <div class="row custom-mt-10 z-index-0">
+          <div class="col-10 ml-auto mr-auto">
+            <img class="img-fluid rounded" src="{% static 'website/images/about/04.jpg' %}" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12 md-mt-5">
+         <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class="featured-item" data-bg-color="rgba(49,67,239,0.070)">
+                <div class="featured-icon"> <i class="flaticon-solution"></i>
+                </div>
+                <div class="featured-title">
+                  <h5>Digital Advisory Services</h5>
+                </div>
+                <div class="featured-desc">
+                  <p>Nos offres sur le Digital Advisory Services  sont orientées pour représenter une grande force de compétitivité pour votre compagnie.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 sm-mt-5">
+              <div class="featured-item" data-bg-color="rgba(253,91,3,0.070)">
+                <div class="featured-icon"> <i class="flaticon-money-1"></i>
+                </div>
+                <div class="featured-title">
+                  <h5>Financial Advisory Services</h5>
+                </div>
+                <div class="featured-desc">
+                  <p>Cette activité a pour objet d’apporter des solutions aux entreprises et organisations dans leurs opérations de croissance, de transmission et d’amélioration des performances</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 mt-5">
+              <div class="featured-item" data-bg-color="rgba(131,199,43,0.070)">
+                <div class="featured-icon"> <i class="flaticon-testing"></i>
+                </div>
+                <div class="featured-title">
+                  <h5>Tax and Legal Advisory Services</h5>
+                </div>
+                <div class="featured-desc">
+                  <p>Notre offre de service Tax and Legal Advisory Services vous accompagne dans la résolution des problématiques juridiques, fisacles et administratives, face à une réglementation juridique et fiscale changeante au niveau des compagnies d'assurance.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 mt-5">
+              <div class="featured-item" data-bg-color="rgba(233,15,42,0.070)">
+                <div class="featured-icon"> <i class="flaticon-life"></i>
+                </div>
+                <div class="featured-title">
+                  <h5>Human Capital Advisory Services</h5>
+                </div>
+                <div class="featured-desc">
+                  <p>Nous disposons d'une large expérience en matière de formation et d'accompagnement des compagnies d'assurance, que ce soit des modules ponctuels ou suivant un plan de formation sur une période prédéfinie.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 mt-5">
+              <div class="featured-item" data-bg-color="rgba(49,67,239,0.070)">
+                <div class="featured-icon"> <i class="flaticon-search"></i>
+                </div>
+                <div class="featured-title">
+                  <h5>Audit Services </h5>
+                </div>
+                <div class="featured-desc">
+                  <p>Nos lignes de services ont pour but de répondre avec efficacité aux problématiques et besoins complexes de nos clients.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 mt-5">
+              <div class="featured-item" data-bg-color="rgba(233,15,42,0.070)">
+                <div class="featured-icon"><i class="flaticon-analysis-1"></i>
+                </div>
+                <div class="featured-title">
+                  <h5>Assistance Technique et Comptable</h5>
+                </div>
+                <div class="featured-desc">
+                  <p>Nous offrons une assistance comptable pour l'analyse des comptes de gestion et Technique pour les compagnies d'assurance</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+      </div>
+    </div>
+    <div class="row mt-8">
+      <div class="col-lg-4 col-md-4">
+        <h5><span class="text-theme font-w-7">01.</span> Notre Mission</h5>
+        <p>Nous avons comme mission d’offrir un travail d’excellence au profit des compagnies d’assurance de l’espace CIMA pour la création de valeur ajoutée et la maximisation de leurs avantages compétitifs, afin d’assurer leur succès et l’atteinte de leur objectif.
+          Nous construisons des relations de long terme et désirons contribuer au développement social des économies africaines du marché des assurances de la CIMA, en proposant des renforcements de la réglementation actuelle et en libérant les potentiels de croissance à côtés de nos compagnies d’assurance.
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <h5><span class="text-theme font-w-7">02.</span> Notre Vision</h5>
+        <p>Notre vision est de devenir un cabinet de référence dans le conseil en assurance dans les compagnies installées dans l’espace CIMA, grâce aux solutions proposée, au solide savoir-faire de nos professionnels qui ont capitalisé des années d’expérience dans le métier des assurances.
+            Nous plaçons nos clients, nos collaborateurs, le marché au cœur de notre vision stratégique. Nous sommes convaincus que nos compagnies d’assurance qui opèrent dans l’espace de la Confédération Interafricaine des Marchés d’Assurance (CIMA), sont des acteurs incontournables pour le développement économique, social et financier dans nos économies nationales.
+            Nous sommes résolument organisés et à la disposition de ces compagnies d’assurance pour les accompagner dans leur développement en Afrique.
+
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <h5><span class="text-theme font-w-7">03.</span> Nos Valeurs</h5>
+        <p>Notre cabinet est frontalement attaché à ses valeurs qui tirent leur genèse de notre culture et nos traditions africaines émaillées d’intégrité, d’ouverture d’esprit, de responsabilité et d’un haut niveau de qualité. Nos valeurs sont les fondamentaux de notre attitude et de notre pratique professionnelle : Ouverture d’esprit,Innover,Agir avec intégrité,Assurer un haut niveau de qualité.
+
+
+
+
+</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--about end-->
+
+
+
+
+
+</div>
+
+<!--body content end--> 
+
+{% endblock %}

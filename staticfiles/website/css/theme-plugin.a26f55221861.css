@@ -1,0 +1,27 @@
+/* ------------------------------------------------
+  Project:   Consulterz - Consulting Finance Accounting
+  Author:    ThemeHt
+------------------------------------------------ */
+
+/* ------------------------
+    Table of Css
+
+  1. bootstrap.min
+  2. animate
+  3. fontawesome-all
+  4. magnific-popup
+  5. owl.carousel
+  6. base  
+  7. shortcodes
+ ------------------------ */
+
+
+@import url("bootstrap.min.eb9731e43582.css");
+@import url("animate.f049292224b6.css");
+@import url("fontawesome-all.313e0c124d6d.css");
+@import url("magnific-popup.7581cd66c53f.css");
+@import url("owl.carousel.829724fe9da6.css");
+@import url("lightslider.min.a73a4f6e82d5.css");
+@import url("jquery-ui.58435e932060.css");
+@import url("base.51a4a57316d4.css");
+@import url("shortcodes.dbccb1009114.css");
