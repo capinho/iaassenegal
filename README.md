@@ -10,7 +10,7 @@ tags:
 
 # Django Example
 
-This is a [Django](https://www.djangoproject.com/) application that connects to a Railway Postgres database.
+This is a showcase website for a insurance company build with [Django](https://www.djangoproject.com/) application that connects to a Railway Postgres database .
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new?template=https%3A%2F%2Fgithub.com%2Frailwayapp%2Fexamples%2Ftree%2Fmaster%2Fexamples%2Fdjangopy&plugins=postgresql&envs=SECRET_KEY&SECRET_KEYDesc=Django+secret+key+used+for+authentication)
 
