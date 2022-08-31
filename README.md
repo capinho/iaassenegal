@@ -1,6 +1,6 @@
 ---
 title: Django
-description: A Django application that connects to a PostgreSQL database
+description: This is a showcase website for a insurance company build with Django application that connects to a PostgreSQL database
 tags:
   - python
   - django
