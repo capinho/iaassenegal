@@ -5,6 +5,7 @@ tags:
   - python
   - django
   - postgresql
+  - HTML/CSS
 ---
 
 # Django Example
