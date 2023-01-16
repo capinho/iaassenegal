@@ -19,7 +19,7 @@ def contact(request):
         send_templated_mail(
                 template_name='welcome',
                 from_email=email,
-                recipient_list=['papadiawara@hotmail.fr','contact@iaas-senegal.com'],
+                recipient_list=['contact@iaas-senegal.com'],
                 context={
                     'firstname':firstname,
                     'lastname':lastname,
